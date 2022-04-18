@@ -14,7 +14,7 @@ body
     color: black;
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: normal;
+    font-size: smaller;
 }
 
 /******************************** Header ***********************************/
@@ -52,7 +52,7 @@ header nav li
 
 header nav a
 {
-    font-size: 20px;
+    font-size: 15px;
     color: #0065FC;
     padding-bottom: 3px;
     text-decoration: none;
@@ -65,12 +65,11 @@ header nav a:hover
 }
 
 /********************************** Corps *******************************/
-h1, h2, h3
+h1, h2, h3, p
 {
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     color: black;
     text-align: left;
-    font-size: 100%;
 }
 
 /********************** Section Recherche en cours */
@@ -91,7 +90,6 @@ h1, h2, h3
  #section1
 {
     display: flex;
-    margin-bottom: 20px;
 }
 /********************** general section1 ***/
 article, aside
@@ -101,38 +99,56 @@ article, aside
 }
 
 /********** article section1 **/
-article /* qui englobe la ligne 1 et 2 */
+article 
 {
     background-color: #F2F2F2;
     margin-right: 20px;
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px;
+    height: 600px;
+    
 }
-.cartesHebergements
-{
 
-}
     .carteslogements
     {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-content: space-around;
+        
     }
+
     
-    .cartesl
+    .cartesL
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        width: 330px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .carteL
+    {
+        background-color: white;
+        border-radius: 5px;
     }
     .carteL img
     {
-        width: 300px;
+        width: 270px;
+        height: 130px;
+        object-fit: cover;
     }
 
+    .descriptionL
+    {
+        height: 20px;
+    }
 /********** aside section1 */
     aside 
 {
@@ -142,9 +158,33 @@ article /* qui englobe la ligne 1 et 2 */
     font-size: 80%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
 }
+
+.populaire
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.description
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.populaire img
+    {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
 
 /********************** Section 2 *********************/
 /*********************** general section2 ****/
@@ -168,7 +208,7 @@ article /* qui englobe la ligne 1 et 2 */
 
 /*********************************** Footer ****************************/
 
-/******************** general section1 *****/
+/******************** general footer *****/
 footer
 {
     text-align: justify;
