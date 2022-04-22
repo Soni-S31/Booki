@@ -1,22 +1,51 @@
 /* Définition des polices */
 @font-face 
 {
-    font-family: 'RalewayLight';
-    src: url(font/Relaway/Raleway-Light.ttf) format('truetype');
+    font-family: 'Ralewaybold' ;
+    src: url('Font/Raleway/Raleway-Bold.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
+@font-face 
+{
+    font-family: 'Raleway' ;
+    src: url('Font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
 
 /******************************** Elements principaux de la page ************/
 body
 {
     background-color: white;
     color: black;
-    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: smaller;
+    margin: 50px;
+    width: auto;
 }
 
+h1, h2
+{
+    font-family: 'RalewayBold', Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+    font-family: 'RalewayBold', Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-block-start: 10px;
+    margin-block-end: 5px;
+    align-items: flex-start;
+}
+
+p
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
 /******************************** Header ***********************************/
 /***************** base en-tête */
 header
@@ -24,7 +53,9 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 25px;
 }
+
 #logo
 {
     display: flex;
@@ -43,53 +74,173 @@ header nav ul
 {
     list-style-type: none;
     display: flex;    
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 header nav li
 {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 header nav a
 {
     font-size: 15px;
-    color: #0065FC;
+    color: black;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
 header nav a:hover
 {
-    color: black;
+    color: #0065FC;
     border-bottom: none;
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
 }
 
-/********************************** Corps *******************************/
-h1, h2, h3, p
-{
-    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
-    color: black;
-    text-align: left;
-}
 
-/********************** Section Recherche en cours */
-#recherche
+
+
+/********************** Section Recherche  */
+.sectionrecherche
 {
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
- /*** Filtres en cours ***/
- #Filtres
+
+.sectionrecherche h1
+{
+    font-size: larger;
+}
+.fa-location-dot
  {
- display: inline;
- margin-block: 30px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: black;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+.flex-form 
+{
+    display: flex;
+    z-index: auto;
+    position: relative;
+    width: 500px;
+    border: 1px solid #F2F2F2;
+    color: black;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+.flex-form input[type="submit"] 
+{
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    
+  }
+
+  .flex-form > * 
+  {
+    border: 0;
+    background: #fff;
+    color: black;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  
+  input[type="search"] 
+  {
+    flex-basis: 450px;
+    padding: 8px;
+    color: black;
+  }
+
+ /************* Selection Filtres  ************/
+ .lignefilter
+ {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ padding-top: 30px;
+ font-family: 'Raleway', Arial, Helvetica, sans-serif;
  }
 
- /*********************** Section 1 ********************/
-
- #section1
+ .Filter
 {
     display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid #F2F2F2;
+    border-radius: 60px;
+    margin-left: 20PX;
+    margin-right: 20px;
+  }
+  
+  .Filter:hover
+  {
+      color: #0065FC;
+      background-color: #F2F2F2;
+  }
+
+  input[type="checkbox"] 
+  {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .checboxfilter
+  {
+      padding: 10px 20px 10px 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  span
+  {
+    background: #deebff;
+    border: 1px solid #deebff;
+    color: #0065FC;
+    cursor: pointer;
+    border-radius: 60px ;
+    padding: 15px 15px 5px 15px;
+  }
+/*nbre de logements */
+#info_nombre
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.fa-info
+{
+  background: white;
+  border: 2px solid #F2F2F2;
+  color: #0065FC;
+  border-radius: 60px ;
+  padding: 5px 10px 5px 10px;
+}
+
+
+ /*********************** section 1 ********************/
+
+ #Section1
+{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 /********************** general section1 ***/
 article, aside
@@ -98,134 +249,257 @@ article, aside
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
 }
 
-/********** article section1 **/
-article 
+/********** article sectionHebergements **/
+#sectionHebergements
 {
     background-color: #F2F2F2;
-    margin-right: 20px;
     flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    margin: 10px;
-    height: 600px;
-    
+    margin-right: 20px;
+    font-size: small;
+    height: 550px;
+    padding: 20px;
 }
 
     .carteslogements
     {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: space-around;
-        
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: flex-start;
+        height: 75%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     
-    .cartesL
+    .carteL
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 330px;
-        height: 200px;
-        margin: 10px;
-    }
-
-    .carteL
-    {
+        justify-content: flex-start;
+        align-content: flex-start; 
         background-color: white;
-        border-radius: 5px;
+        border-radius: 10px;
+        width: 30%;
+        height: 55%;
+        margin-bottom: 25px;
+        box-sizing: border-box;
     }
     .carteL img
     {
-        width: 270px;
+        max-width: 100%;
+        width: 100%;
         height: 130px;
+        max-height: 100%;
         object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
     }
 
     .descriptionL
     {
-        height: 20px;
+    display: block;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 15%;
+    align-content: flex-end;
+    box-sizing: border-box;
+    font-size: small;
+    margin-left: 10px;
     }
+
+    
+
+.afficher
+{
+    display: flex;
+    align-content: flex-end;
+    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+    color: black;
+
+}
 /********** aside section1 */
-    aside 
+aside 
 {
     flex: 1;
     background-color: #F2F2F2;
     border-radius: 5px;
-    font-size: 80%;
+    font-size: small;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    height: 570px;
 }
 
-.populaire
+.entetepopulaires
 {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#Pluspopulaires
+{
+    display: flex;
+    flex-direction: column;
+}
+.populaire 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 25%;
+    align-items: flex-start;
 }
 
 .description
 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    margin-left: 15px;
+    align-items: flex-start;
+    align-content: flex-end;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+    text-align: start;
+    text-align-last:left
 }
+
 
 .populaire img
     {
         width: 130px;
         height: 130px;
         object-fit: cover;
+        margin: 3px;
+        border-radius: 10px 0px 0px 10px;
     }
 
-/********************** Section 2 *********************/
-/*********************** general section2 ****/
+/********************** SectionActivites *********************/
+/*********************** general SectionActivites ****/
 
-.activites
+#SectionActivites
 {
     display: flex;
-    margin-bottom: 20px;
-    text-align: justify;
-    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+    margin: 20px;
+    width: 100%;
+    
+}
+#Activites_Marseille
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-/****** Cartes actvites ******/
-#organisation
+#Activites_Marseille h3 
+{
+    margin-left: 20px;
+}
+
+.organisation
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 90%;
 }
+
+.bloc1, .bloc2
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    background-color: white;
+    justify-content: space-between;
+    margin-right: 30px;
+    height: 100%;
+}
+/**********Element activites********/
+.element1, .element2
+{
+    background-color: white;
+    border-radius: 10px;
+    border-color: #F2F2F2;
+    box-shadow: #F2F2F2 3px 3px 3px 3px;
+    width: 100%;
+    font-size: small;
+}
+
+.element1
+{
+    height: 100%;
+}
+.element1 img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.element2
+{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.element2 img
+{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}   
+
 
 /*********************************** Footer ****************************/
 
 /******************** general footer *****/
 footer
 {
-    text-align: justify;
-    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    text-align: justify;
+    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
     margin-bottom: 20px;
+    border: #F2F2F2;
+    background-color: #F2F2F2;
+    height: 200px;
+  
 }
 
 /***** elements footer *******/
-footer nav ul
+footer nav 
 {
     list-style-type: none;
     display: flex;   
     flex-direction: column; 
-    text-align: center;
+    text-align:left;
+    margin-left: 20px;
+    margin-right: 60px;
+    width: 30%;
+    line-height: 30px ;
 }
 
 footer nav li
@@ -233,7 +507,7 @@ footer nav li
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-right: 15px;
+    
 }
 
 
@@ -243,12 +517,5 @@ footer nav a
     padding-bottom: 3px;
     text-decoration: none;
     color: black;
-}
-
-header nav a:hover
-{
-    border-bottom: none;
-    color: #F2F2F2;
-
 }
 
