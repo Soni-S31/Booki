@@ -1,0 +1,717 @@
+
+/* Définition des polices */
+@font-face 
+{
+    font-family :  'Ralewaybold' ;
+    src :  url('Font/Raleway/Raleway-Bold.ttf') format('truetype' );
+        font-weight : normal;
+        font-style : normal;
+}
+@font-face 
+{
+    font-family: 'Raleway' ;
+    src: url('Font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+/******************************** Elements principaux de la page ************/
+.blocpage
+{
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+}
+header, main
+{
+    margin-left: 5%
+}
+
+h1 ,  h2
+{
+    font-family :  'RalewayBold' , Arial , Helvetica , sans-serif;
+}
+
+h3
+{
+    font-family :  'RalewayBold' , Arial , Helvetica , sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 16px;
+}
+
+p
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 14px;
+}
+/******************************** Header ***********************************/
+/***************** base en-tête */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 50%;
+    height: 50%;
+}
+
+/***************** navigation dans l'en-tête */
+header nav ul
+{
+    list-style-type: none;
+    display: flex;    
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+header nav li
+{
+    margin-right: 10px;
+}
+
+header nav a
+{
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+header nav a:hover
+{
+    color: #0065FC;
+    border-bottom: none;
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+}
+/********************** Section Recherche  */
+.sectionrecherche
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+}
+
+
+.fa-location-dot
+ {
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: black;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+.flex-form 
+{
+    display: flex;
+    z-index: auto;
+    position: relative;
+    max-width: 500px;
+    border: 1px solid #F2F2F2;
+    color: black;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 20px;
+  }
+
+.flex-form input[type="submit"] 
+{
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .flex-form > * 
+  {
+    border: 0;
+    background: #fff;
+    color: black;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  
+  input[type="search"] 
+  {
+    flex-basis: 450px;
+    padding-left: 8px;
+    color: black;
+  }
+  .search-button
+  {
+      display: none;
+  }
+ /************* Selection Filtres  ************/
+ .filter {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin: 30px 0px; 
+    gap: 25px;
+}
+
+.filter h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.filter ul {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 17px;
+}
+
+.filter li {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 100px;
+    border-left: #DEEBFF;  
+}
+
+.filter a {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:#000000; 
+    padding: 0px 12px; 
+}
+
+.filter li:hover {
+    background-color: #DEEBFF;
+}
+
+.blue-icon {
+    color: #0065fc;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 3 !important;
+}
+/*nbre de logements */
+#info_nombre
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#info_nombre p
+{
+    display: flex; 
+    align-items: center;
+}
+
+.fa-info
+{
+  background: white;
+  border: 2px solid #F2F2F2;
+  color: #0065FC;
+  border-radius: 60px ;
+  padding: 5px 10px 5px 10px;
+}
+
+
+ /*********************** section 1 ********************/
+
+ #Section1
+{
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+}
+/********************** general section1 ***/
+article, aside
+{
+    text-align: justify;
+    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+}
+
+/********** article sectionHebergements **/
+#sectionHebergements
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-right: 2%;
+    padding: 2%;
+    width: 70%;
+    
+}
+
+    .carteslogements
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    
+    .carteL
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    .carteL img
+    {
+        width: 290px;
+        max-width: 98%;
+        height: 115px;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+        margin: 3px;
+    }
+
+    .descriptionL
+    {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 70px;
+    margin-left: 3%;
+    }
+
+
+.afficher
+{
+    display: flex;
+    align-content: flex-end;
+    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+/********** aside section1 */
+aside 
+{
+    
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2%;
+    width: 27%;
+
+}
+
+.entetepopulaires
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+
+}
+
+.cardpopulaire
+{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    flex: 1;
+    justify-content: space-between;
+
+}
+#Pluspopulaires
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+}
+.populaire 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: white;
+    border-radius: 10px;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-right: 2%;
+    text-align: start;
+    height: 100%;
+   
+}
+
+.etoile
+{
+    color: #0065FC;
+    font-size: 12px;
+
+}
+
+.textcartes
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.populaire img
+    {
+        width: 130px;
+        height: 150px;
+        max-height: 110%;
+        object-fit: cover;
+        margin: 2%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+/********************** SectionActivites *********************/
+/*********************** general SectionActivites ****/
+
+#SectionActivites
+{
+    display: flex;
+    width: 103%;
+    height: 480px;
+    margin-top: 2%;
+}
+#Activites_Marseille
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3%;
+}
+
+#Activites_Marseille h3 
+{
+    margin-left: 2%;
+}
+
+.organisation
+{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+
+.bloc1, .bloc2
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    background-color: white;
+    justify-content: space-between;
+    margin-right: 3%;
+    height: 100%;
+}
+/**********Element activites********/
+.element1, .element2
+{
+    background-color: white;
+    border-radius: 10px;
+    border-color: #F2F2F2;
+    box-shadow: #F2F2F2 3px 3px 3px 3px;
+    width: 100%;
+   
+}
+
+.element1
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.element1 img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.element2
+{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.element2 img
+{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}   
+
+
+/*********************************** Footer ****************************/
+
+/******************** general footer *****/
+footer
+{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    border: #F2F2F2;
+    background-color: #F2F2F2;
+    height: 200px;
+    width: 105%;
+    margin-top: 2%;
+
+}
+
+/***** elements footer *******/
+footer nav 
+{
+    list-style-type: none;
+    display: flex;   
+    flex-direction: column; 
+    text-align:left;
+    margin-right: 60px;
+    width: 30%;
+    line-height: 30px ;
+}
+
+footer nav h4{
+    margin-left: 40px;
+}
+
+footer nav li
+{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+
+
+footer nav a
+{
+    
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+/************ Responsive ***********/
+@media screen and (min-width: 992px) /**** ecran ordi ****/
+{ .blocpage
+    {
+        min-width: 992px;
+        max-width: 1366px; 
+    }
+}
+
+/**** Tablette ****/
+@media all and  (min-width: 768px) and (max-width: 992px) 
+
+{
+.blocpage{
+    max-width: 992px;
+    min-width: 768px;
+}
+h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p, .checboxfilter, .flex-form, footer nav
+{
+        font-size: 70%;
+}
+#section1
+{
+    height: auto;
+}
+.populaire img
+{
+    width: 105px;
+    height: 120px;
+    object-fit: cover;
+    margin: 2%;
+    }
+}
+/**** Portable ****/
+@media all and  (max-width: 768px) 
+{
+.blocpage{
+    max-width: 768px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0%;
+}
+header
+{   display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#logo
+{   justify-content: center;
+}
+header nav
+{
+    display: flex;
+    margin: 25px 0px 15px 0px;
+    width:100%;
+    text-align:center;
+}
+header nav a
+{
+    padding: 10px 51px;
+    border-bottom: 4px solid #F2F2F2;
+    width: 50%;
+}
+
+header nav a:hover
+{
+    border-top: none;
+    border-bottom: 4px solid #0065FC;
+    padding : 10px 50px;
+}
+
+main 
+{width: 100%;
+height: 100%;
+box-sizing: border-box;
+margin: 10px;}
+
+.sectionrecherche
+{   width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 5px;}
+H1
+{   width: 100%;
+    font-size: 100%;
+    text-align:left;}
+
+.flex-form 
+{   
+    max-width: 90%;
+    justify-content: center;
+    
+    }
+.flex-form input[type="submit"] 
+    {
+        display: none;
+    }
+
+.search-button
+    {
+        display:block;
+        border-radius: 13px 13px 13px 13px;
+        background:#0065fc;
+        color: #ffff;
+        border-style: none;
+        font-weight: bold;
+        min-width: 50px;
+        font-size: 18px;
+        margin-left: -20px;
+      }
+
+.filter
+{
+    margin: 0;
+    gap: 10px;
+    width: 100%;
+}
+.filter h2
+{
+    margin-bottom: 0;
+}
+.filter ul 
+{
+    gap: 10px;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+}
+#info_nombre
+{
+    margin: 10px;
+}
+#Section1
+{   flex-direction: column;}
+aside
+{    order: -1;
+     width: auto;}
+ #Pluspopulaires
+    {   width: 100%;}
+
+#sectionHebergements
+    {  width: auto;
+       background-color: #fff;
+        }  
+.hebergment
+{   width: 100%;}
+.carteslogements
+{   display: flex;
+    flex-direction: column;
+    width: 100%;}
+.carteL
+{   background-color: white;
+    border-radius: 10px;
+    border-color: #F2F2F2;
+    box-shadow: #f2f2f2 3px 3px 3px 3px;
+    width: 100%;
+    }
+.organisation
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.bloc1, .bloc2
+{   width: 100%;
+    height: 100%;}
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+}
