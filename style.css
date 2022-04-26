@@ -1,10 +1,10 @@
 /* Définition des polices */
-@fontface 
+@font-face 
 {
-    @font-family :  'Ralewaybold' ;
-    src :  url ( 'Font/Raleway/Raleway-Bold.ttf' ) format ( 'truetype' );
+    font-family :  'Ralewaybold' ;
+    src :  url('Font/Raleway/Raleway-Bold.ttf') format('truetype' );
         font-weight : normal;
-        style de police : normal ;
+        font-style : normal;
 }
 @font-face 
 {
@@ -30,7 +30,6 @@
 
 h1 ,  h2
 {
-    font-size: normal;
     font-family :  'RalewayBold' , Arial , Helvetica , sans-serif;
 }
 
@@ -46,7 +45,7 @@ p
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     margin-top: 0px;
-    margin-bottom: Opx;
+    margin-bottom: 0px;
     font-size: 14px;
 }
 /******************************** Header ***********************************/
@@ -126,7 +125,7 @@ header nav a:hover
     display: flex;
     z-index: auto;
     position: relative;
-    width: 500px;
+    max-width: 500px;
     border: 1px solid #F2F2F2;
     color: black;
     border-radius: 15px 15px 15px 15px;
@@ -257,6 +256,7 @@ header nav a:hover
     margin: 20px;
     width: 100%;
     height: 630px;
+    max-height: 100%;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 /********************** general section1 ***/
@@ -301,6 +301,7 @@ article, aside
     {
         max-width: 98%;
         width: 330px;
+        max-width: 100%;
         height: 115px;
         max-height: 100%;
         object-fit: cover;
@@ -549,7 +550,7 @@ footer nav a
 @media screen and (min-width: 992px) /**** ecran ordi ****/
 { .blocpage
     {
-    width:auto; 
+    width: auto; 
     }
 }
 
@@ -564,4 +565,3 @@ footer nav a
     flex-shrink: 1;
 }
 }
-
