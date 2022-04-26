@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name=viewport content="width=768, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css"/>
@@ -38,40 +38,19 @@
                     </label>
                     <input type="search" placeholder="Marseille, France" name= "recherche" id="RechercheVille" required/>
                     <input type="submit" value="Rechercher"/>
+                    <button type="button" class="search-button"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </div>
         <!--selection filtre-->
-    <div id="Filtres"> 
-            <form method="post" action="traitement.php">
-            <div class="lignefilter" >
-                <p>Filtres </p>
-                <!--Economique-->
-                <div class="Filter">
-                    <span class="fa-solid fa-money-bill-wave"></span>
-                    <input type="checkbox" name="Economique" id="Economique"/> 
-                    <label class="checboxfilter" for="Economique">Economique</label> 
-                </div>
-                <!--Familial-->
-                <div class="Filter">
-                    <span class="fa-solid fa-child-reaching"></span>
-                    <input type="checkbox" name="Familial" id="Familial" /> 
-                    <label class="checboxfilter" for="Familial">Familial</label>
-                </div>
-                <!--Romantique-->
-                <div class="Filter">
-                    <span class="fa-solid fa-heart"></span>
-                    <input type="checkbox" name="Romantique" id="Romantique" /> 
-                    <label class="checboxfilter" for="Romantique">Romantique</label>
-                </div>
-                <!--Animaux-->
-                <div class="Filter">
-                    <span class="fa-solid fa-dog"></span>
-                    <input type="checkbox" name="Animaux_autorises" id="Animaux_autorises" /> 
-                    <label class="checboxfilter" for="Animaux_autorises">Animaux Autorisés</label> 
-                </div>
-            </div>
-            </form>
+    <div class="filter">
+        <h2>Filtres</h2>
+        <ul>
+            <li><i class="blue-icon fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
+            <li><i class="blue-icon fas fa-child"></i><a href="#">Familial</a></li>
+            <li><i class="blue-icon fas fa-heart"></i><a href="#">Romantique</a></li>
+            <li><i class="blue-icon fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
+        </ul>  
      </div>
     <div id="info_nombre"><!--nbre de logements-->
             <p><span class="fa-solid fa-info"></span>
