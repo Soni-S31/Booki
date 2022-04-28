@@ -690,9 +690,8 @@ aside
        background-color: #fff;
        margin: 0;
        padding: 30px 20px;
-       gap: 20px;
+       gap: 30px;
         }  
-
 .carteslogements
 {   display: flex;
     flex-direction: column;
@@ -700,7 +699,6 @@ aside
     gap: 10px;
     margin-top: 20px;
 }
-
 .carteL
 {   background-color: white;
     border-color: #F2F2F2;
@@ -722,18 +720,38 @@ aside
 {   margin-top:0%;
     margin-bottom: 5px;
 }
-/*****Section actvites*****/
+
+/*****Section Actvites*****/
+#Activites_Marseille
+{  box-sizing: content-box;
+    width: 100%;
+   background-color: #fff;
+   margin: 0;
+   padding: 0px 20px;
+   gap: 15px;}
+
 .organisation
 {
     display: flex;
     flex-direction: column;
-    
-    
+    width: inherit;
+    gap: 0%;    
 }
 .bloc1, .bloc2
-{   width: 100%;
-    
+{   width: 100%;}
+.element1 img, .element2 img
+{   width: 98%;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 3px;
 }
+.element1, .element2
+{   width: 98%;
+    margin-bottom: 15px;
+    border-radius: 20px;}
+
+.element1 h3, .element2 h3
+{   margin-left: 5px;}
 /********Footer*****/
 footer
 {
