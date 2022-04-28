@@ -90,7 +90,7 @@ header nav a:hover
     padding-top: 20px;
 }
 /********************** Section Recherche  */
-.sectionrecherche
+.recherche
 {
     display: flex;
     flex-direction: column;
@@ -244,7 +244,6 @@ article, aside
 {
     background-color: #F2F2F2;
     display: flex;
-    flex: 2;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
@@ -307,8 +306,8 @@ aside
     align-items: center;
     border-radius: 10px;
     padding: 2%;
-    flex: 1;
-
+    width: 33%;
+    min-width: 320px;
 }
 
 .entetepopulaires
