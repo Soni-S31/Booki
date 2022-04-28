@@ -719,8 +719,9 @@ aside
 {   height: auto;
     margin-left: 15px;}
 .textcartes h3
-{   margin-top: O%;
-    margin-bottom: 5px;}
+{   margin-top:0%;
+    margin-bottom: 5px;
+}
 /*****Section actvites*****/
 .organisation
 {
