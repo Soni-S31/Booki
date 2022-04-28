@@ -370,7 +370,8 @@ aside
 {
     color: #0065FC;
     font-size: 12px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 
 }
 
@@ -543,6 +544,14 @@ body
 {
     width: auto;
 }
+/****margin padding doc****/
+header, main 
+{   margin: 20px 0px 20px 0px;}
+#sectionrecherche
+{
+    margin: 20px;
+}
+
 /****Header*****/
 header
 {   display: flex;
@@ -568,6 +577,10 @@ header nav ul
     padding-inline-start:0%;
 }
 
+header nav li 
+{
+    margin: 0%;
+}
 header nav a
 {
     padding: 10px 50px;
@@ -582,13 +595,6 @@ header nav a:hover
     padding : 10px 50px;
 }
 
-/*******Main******/
-main 
-{
-    margin: 0%;
-    box-sizing: content-box;
-    width: 100%;
-}
 /****Section recherche*****/
 .sectionrecherche
 {  
@@ -603,9 +609,10 @@ H1
     width: 95%;
     }
 
-.flex-form 
+.recherche
 {   
     max-width: 90%;
+    display: flex;
     justify-content: center;
     
     }
@@ -629,7 +636,7 @@ H1
 
 .filter
 {
-    margin: 10px;
+    margin: 10px 0px;
     gap: 10px;
     
 }
@@ -646,63 +653,74 @@ H1
 }
 #info_nombre
 {
-    margin: 10px;
+    margin: 20px 0px;
 }
 
 /********Section 1*********/
 #Section1
 {   
     flex-direction: column;
-    margin-top: 0%;
-    box-sizing: content-box;
-    width: 100%;}
+    }
+.carteL, .populaire
+{   border-radius: 20px;
+}
+/***Aside****/
 aside
 {    order: -1;
     box-sizing: content-box;
-    width: 98%;
+    padding: 30px 15px;
+    border-radius: 0%;
+    width: auto;
     }
- #Pluspopulaires
-    {   
-        box-sizing: content-box;
-        width: 95%;
-    }
+ 
 .cardpopulaire
     {
         gap: 10px;
+        margin-top: 15px;
     }
 .description
 {  
     width: 100%;
     height: 150px;}
+
+/*****SectionHebergements******/
 #sectionHebergements
     {  box-sizing: content-box;
-        width: 100%;
+        width: auto;
        background-color: #fff;
        margin: 0;
-       padding: 0px;
+       padding: 30px 20px;
+       gap: 20px;
         }  
-h2 
-{ margin: 10px;
-}
+
 .carteslogements
 {   display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .carteL
 {   background-color: white;
-    border-radius: 10px;
     border-color: #F2F2F2;
     box-shadow: #f2f2f2 3px 3px 3px 3px;
-    width: 100%;
+    width: auto;
     }
+.carteL a
+{   width: auto;
+    height: auto;}
 .carteL img 
 {
-    width: 100%;
+    width: 98%;
+    border-radius: 20px 20px 0px 0px;
 }
 .descriptionL
-{   height: auto;}
+{   height: auto;
+    margin-left: 15px;}
+.textcartes h3
+{   margin-top: O%;
+    margin-bottom: 5px;}
 /*****Section actvites*****/
 .organisation
 {
