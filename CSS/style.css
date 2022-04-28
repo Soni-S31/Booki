@@ -17,9 +17,12 @@ body
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    margin: 30px;
 }
 
+header, #sectionrecherche, #Section1, #SectionActivites
+{
+    margin: 40px;
+}
 h1 ,  h2, h3
 {
     font-family :  'Raleway' , Arial , Helvetica , sans-serif;
