@@ -11,7 +11,6 @@
     </head>
 
     <body>
-    <div class="blocpage">
 <!--En tête -->
     <header>
             <div id="logo">
@@ -28,10 +27,11 @@
 
     <main>
 <!-- Section de recherche -->
-    <div class="sectionrecherche">
+    <section class="sectionrecherche">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <!---selection recherche-->
         <div class="Recherche">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
             <form class="flex-form" method="post" action="traitement.php">
                 <label id="from">
                     <span class="fa-solid fa-location-dot"></span>
@@ -41,21 +41,23 @@
                     <button type="button" class="search-button"><i class="fas fa-search"></i></button>
             </form>
         </div>
-    </div>
+   
         <!--selection filtre-->
-    <div class="filter">
-        <h2>Filtres</h2>
-        <ul>
-            <li><i class="blue-icon fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
-            <li><i class="blue-icon fas fa-child"></i><a href="#">Familial</a></li>
-            <li><i class="blue-icon fas fa-heart"></i><a href="#">Romantique</a></li>
-            <li><i class="blue-icon fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
-        </ul>  
-     </div>
-    <div id="info_nombre"><!--nbre de logements-->
+        <div class="filter">
+             <h2>Filtres</h2>
+            <ul>
+                 <li><i class="blue-icon fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
+                 <li><i class="blue-icon fas fa-child"></i><a href="#">Familial</a></li>
+                <li><i class="blue-icon fas fa-heart"></i><a href="#">Romantique</a></li>
+                 <li><i class="blue-icon fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
+            </ul>  
+        </div>
+        <!--nbre de logements-->
+        <div id="info_nombre">
             <p><span class="fa-solid fa-info"></span>
             Plus de 500 logements sont disponibles dans cette ville </p>
-    </div>
+        </div>
+    </section>
 <!--section 1-->
     <div id="Section1">
     <article id="sectionHebergements">
@@ -290,7 +292,6 @@
             </ul>
         </nav>
     </footer>
-</div>
 </body>
 
 </html>
