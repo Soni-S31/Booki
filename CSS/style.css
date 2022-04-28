@@ -19,19 +19,29 @@ body
     flex-direction: column;
 }
 
-header, #sectionrecherche, #Section1, #SectionActivites
+header, main
 {
-    margin: 40px;
+    margin: 20px 40px 20px 40px;
 }
 h1 ,  h2, h3
 {
     font-family :  'Raleway' , Arial , Helvetica , sans-serif;
 }
 
+H1 
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h2
+{
+    font-size: 18px;
+}
 h3
 {
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
@@ -62,7 +72,6 @@ header
 #logo img
 {
     width: 50%;
-    height: 50%;
 }
 
 /***************** navigation dans l'en-tête */
@@ -75,7 +84,7 @@ header nav ul
 
 header nav li
 {
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 header nav a
@@ -125,7 +134,7 @@ header nav a:hover
     margin-top: 20px;
   }
 
-.flex-form input[type="submit"] 
+.flex-form input[type="submit"] /***Rechercher****/
 {
     background: #0065FC;
     border: 1px solid #0065FC;
@@ -143,7 +152,7 @@ header nav a:hover
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
   
-  input[type="search"] 
+  #RechercheVille
   {
     flex-basis: 450px;
     padding-left: 8px;
@@ -158,19 +167,17 @@ header nav a:hover
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    margin: 30px 0px; 
-    gap: 25px;
+    margin: 15px 0px; 
 }
 
 .filter h2 {
     font-weight: bold;
-    font-size: 18px;
 }
 
 .filter ul {
     display: flex;
     flex-wrap: wrap; 
-    gap: 17px;
+    gap: 17px ;
 }
 
 .filter li {
@@ -231,9 +238,8 @@ header nav a:hover
  #Section1
 {
     display: flex;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    margin-top: 2%;
-    gap: 30px;
+    gap: 10px;
+    margin-top: 20px;
 }
 /********************** general section1 ***/
 article, aside
@@ -250,7 +256,7 @@ article, aside
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 
     .carteslogements
@@ -258,7 +264,7 @@ article, aside
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        gap: 30px;
+        gap: 20px;
     }
 
     
@@ -268,9 +274,12 @@ article, aside
         flex-direction: column;
         background-color: white;
         border-radius: 10px;
-        width: 230px;
+        width: 30%;
     
     }
+    .carteL a 
+    {   width: 98%;
+        height: 115px;}
     .carteL img
     {
         width: 98%;
@@ -303,13 +312,11 @@ aside
 {
     
     background-color: #F2F2F2;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 2%;
-    width: 33%;
+    padding: 20px;
     min-width: 320px;
 }
 
@@ -327,18 +334,15 @@ aside
 {
     display: flex;
     flex-direction: column;
-    height: 80%;
     flex: 1;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
 
 }
 #Pluspopulaires
 {
     display: flex;
     flex-direction: column;
-    height: 100%;
-   
 }
 .populaire 
 {
@@ -392,14 +396,14 @@ aside
 #SectionActivites
 {
     display: flex;
-    margin-top: 2%;
+    margin-top: 30px;
 }
 #Activites_Marseille
 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
 }
 
 #Activites_Marseille h3 
@@ -411,7 +415,6 @@ aside
 {
     display: flex;
     flex-direction: row;
-    height: 90%;
     gap: 20px;
 }
 
@@ -421,11 +424,8 @@ aside
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
-    width: 60%;
     background-color: white;
     justify-content: space-between;
-    
-    height: 100%;
 }
 /**********Element activites********/
 .element1, .element2
@@ -435,18 +435,13 @@ aside
     border-color: #F2F2F2;
     box-shadow: #F2F2F2 3px 3px 3px 3px;
     width: 100%;
-   
 }
 
-.element1
-{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
+
 .element1 img
 {
-    width: 100%;
+    width: 278px;
     height: 350px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -454,14 +449,13 @@ aside
 
 .element2
 {
-    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .element2 img
 {
-    width: 100%;
+    width: 278px;
     height: 130px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -474,39 +468,32 @@ aside
 footer
 {
     display: flex;
-    flex-direction: row;
-    text-align: justify;
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    padding: 30px 40px;
     border: #F2F2F2;
     background-color: #F2F2F2;
-    margin-top: 2%;
+    gap: 100px;
 }
 
 /***** elements footer *******/
 footer nav 
 {
-    list-style-type: none;
-    display: flex;   
-    flex-direction: column; 
-    text-align:left;
-    margin-left: 50px;
-    width: 30%;
-    line-height: 30px ;
+    width: 25%;
 }
 
-footer nav h4{
-    margin-left: 40px;
-}
+footer nav ul
+{   padding: 0%;
+    line-height: 23px;}
 
 footer nav li
 {
     display: flex;
-    flex-direction: column;
-    text-align: justify;
+    list-style-type: none;
+    
 }
-
+ footer nav h4
+ {  width: 100%;}
 
 footer nav a
 {
@@ -736,6 +723,7 @@ footer
     text-align:left;
     margin: 0;
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
+
 }
 footer nav 
 {
