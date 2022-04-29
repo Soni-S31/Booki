@@ -290,7 +290,7 @@ article, aside
         height: 115px;}
     .carteL img
     {
-        width: 98%;
+        width: 100%;
         height: 115px;
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
@@ -360,16 +360,18 @@ aside
     
 }
 .populaire a 
-{   display: flex;}
+{   display: flex;
+    width: 40%;}
 .description
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 3%;
     padding-right: 2%;
     text-align: start;
     height: 100%;
+    width: 60%;
    
 }
 
@@ -391,8 +393,7 @@ aside
 .populaire img
     {
         width: 130px;
-        height: 170px;
-        max-height: 110%;
+        height: 150px;
         object-fit: cover;
         margin: 3px 0px 3px 3px;
         border-radius: 10px 0px 0px 10px;
@@ -556,13 +557,20 @@ h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p, .checboxfilter, .fl
 {
     height: auto;
 }
-.populaire img
-{
-    width: 105px;
-    height: 120px;
+.populaire
+{   height: 33%;}
+.populaire a 
+{   width: 35%;
+    height: 100%;}
+.populaire img 
+{   width: 348px;
+    height: 125px;
+    max-height: 150px;
     object-fit: cover;
     margin: 2%;
     }
+.description
+{   height: 100%;}
 }
 /**** Portable ****/
 @media screen and  (max-width: 768px) 
@@ -708,9 +716,13 @@ aside
         margin-top: 15px;
         width: auto;
     }
+.populaire a 
+{   width: 35%;}
+
+
 .description
 {  
-    width: 100%;
+    width: 60%;
     height: 150px;}
 
 /*****SectionHebergements******/
@@ -740,7 +752,7 @@ aside
     height: auto;}
 .carteL img 
 {
-    width: 98%;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 .descriptionL
@@ -748,9 +760,12 @@ aside
     margin-left: 15px;}
 .textcartes h3
 {   margin-top:0%;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
-
+.textcartes p 
+    {   margin-top: 0%;
+        margin-bottom: 0%;
+    }
 /*****Section Actvites*****/
 #Activites_Marseille
 {  box-sizing: content-box;
