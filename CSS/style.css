@@ -7,6 +7,7 @@
         font-weight: normal;
         font-style: normal;
 }
+@font-face 
 {
     font-family: 'Ralewaybold' ;
     src:  url('Font/Raleway/Raleway-Bold.ttf') format('truetype' );
@@ -67,7 +68,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
+    margin-bottom: 5px;
 }
 
 #logo
@@ -90,15 +91,12 @@ header nav ul
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-header nav li
-{
-    margin-right: 50px;
-}
+
 
 header nav a
 {
     color: black;
-    padding-bottom: 3px;
+    padding: 0px 30px;
     text-decoration: none;
 }
 
@@ -107,7 +105,7 @@ header nav a:hover
     color: #0065FC;
     border-bottom: none;
     border-top: 2px solid #0065FC;
-    padding: 30px 50px;
+    padding: 30px 30px;
 }
 /********************** Section Recherche  */
 #sectionrecherche
@@ -251,13 +249,12 @@ input:-moz-placeholder {  color:#000000; opacity: 1;}
 
 
  /*********************** section 1 ********************/
-
  #Section1
 {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
+    gap: 35px;
+    box-sizing: border-box;
+    width: 100%;}
 /********************** general section1 ***/
 article, aside
 {
@@ -266,18 +263,14 @@ article, aside
 }
 
 /********** article sectionHebergements **/
-#Section1
-{   box-sizing: border-box;
-    width: 100%;}
-
 #sectionHebergements
 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
-    padding: 20px;
+    padding: 35px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -339,8 +332,8 @@ aside
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 20px;
-    width: 33%;
+    padding: 35px;
+    width: 40%;
 }
 
 .entetepopulaires
@@ -359,7 +352,7 @@ aside
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-    gap: 15px;
+    gap: 25px;
 
 }
 #Pluspopulaires
@@ -379,18 +372,20 @@ aside
 .populaire a 
 {   display: flex;
     width: 40%;}
-.description
+.description 
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 3%;
+    padding-left: 15px;
     padding-right: 2%;
     text-align: start;
     height: 100%;
-    width: 60%;
+    width: 50%;
    
 }
+ .description .etoile
+{margin-bottom: 10px;}
 
 .fa-solid
 {
@@ -416,8 +411,8 @@ aside
 
 .populaire img
     {
-        width: 130px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
         object-fit: cover;
         margin: 3px 0px 3px 3px;
         border-radius: 10px 0px 0px 10px;
@@ -458,7 +453,7 @@ aside
 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 35px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -472,7 +467,7 @@ aside
     background-color: white;
     justify-content: space-between;
     width: 25%;
-    gap: 10px
+    gap: 25px
 }
 /**********Element activites********/
 .element1, .element2
@@ -482,6 +477,7 @@ aside
     border-color: #F2F2F2;
     box-shadow: #F2F2F2 3px 3px 3px 3px;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -561,26 +557,31 @@ footer nav a
 body
     {
         min-width: 992px;
-        max-width: 1366px; 
+        max-width: 1440px; 
     }
 }
 
 /**** Tablette ****/
-@media all and  (min-width: 769px) and (max-width: 992px) 
+@media all and  (min-width: 768px) and (max-width: 992px) 
 
 {
 body {
     max-width: 992px;
     min-width: 768px;
 }
-h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p,.filter a,  .checboxfilter, .flex-form, footer nav
+h1 , h2 , header ,  
 {
-        font-size: 80%;
+        font-size: 90%;
 }
-#section1
-{
-    height: auto;
-}
+
+h3, p, .fa-solid, .afficher, .lignefilter p,.filter a,  .checboxfilter, .flex-form, footer nav
+{font-size: 80%;}
+#Section1 {
+    gap: 20px;
+    width: 100%;
+  }
+#sectionHebergements, aside
+{   padding: 15px;}
 .populaire
 {   height: 33%;}
 .populaire a 
@@ -595,13 +596,19 @@ h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p,.filter a,  .checbox
     }
 .description
 {   height: 100%;}
+
+.element1 h3, .element2 h3
+{   margin-left: 5px;
+    text-align: left ;}
+
 }
-/**** Portable ****/
+/************ Portable ****/
 @media screen and  (max-width: 768px) 
 {
 body 
 {
-    width: auto;
+    width: 100%;
+    
 }
 /****margin padding doc****/
 header, main 
@@ -610,7 +617,6 @@ header, main
 {
     margin: 20px;
 }
-
 /****Header*****/
 header
 {   display: flex;
@@ -626,8 +632,8 @@ header
 header nav
 {
     display: flex;
-    margin-top: 10px;
-    text-align:center;
+    margin-top: 30px;
+    text-align: center;
 }
 header nav ul 
 {
@@ -655,6 +661,7 @@ header nav a:hover
 }
 
 /****Section recherche*****/
+
 .sectionrecherche
 {  
     box-sizing: content-box;
@@ -662,10 +669,10 @@ header nav a:hover
     margin: 20px;}
 H1
 {   
-    font-size: 100%;
+    font-size: 22px;
     text-align:left;
     word-wrap: break-word;
-    width: 95%;
+    width: 100%;
     }
 
 .recherche
@@ -712,13 +719,14 @@ H1
 }
 #info_nombre
 {
-    margin: 20px 0px;
+    margin-top: 20px;
 }
 
 /********Section 1*********/
 #Section1
 {   
     flex-direction: column;
+    
     }
 .carteL, .populaire
 {   border-radius: 20px;
@@ -727,7 +735,7 @@ H1
 aside
 {    order: -1;
     box-sizing: content-box;
-    padding: 30px 15px;
+    padding: 0px 15px 30px 15px;
     border-radius: 0%;
     width: auto;
     }
@@ -736,8 +744,7 @@ aside
  
 .cardpopulaire
     {
-        gap: 10px;
-        margin-top: 15px;
+        gap: 20px;
         width: auto;
     }
 .populaire a 
@@ -748,21 +755,31 @@ aside
 {  
     width: 60%;
     height: 150px;}
+.description .textcartes h3
+{   margin-top:20px;
+    margin-bottom: 5px;
+}
+.description .textcartes p 
+    {   margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
+.description .etoile 
+{   margin: 20px 0px;}
 /*****SectionHebergements******/
 #sectionHebergements
     {  box-sizing: content-box;
         width: auto;
        background-color: #fff;
        margin: 0;
-       padding: 30px 20px;
+       padding: 0px 20px 30px 20px;
        gap: 30px;
         }  
 .carteslogements
 {   display: flex;
     flex-direction: column;
     width: auto;
-    gap: 10px;
+    gap: 20px;
     margin-top: 20px;
 }
 .carteL
@@ -791,13 +808,21 @@ aside
         margin-bottom: 0%;
     }
 /*****Section Actvites*****/
+#SectionActivites
+{ margin-top: 0%;}
 #Activites_Marseille
 {  box-sizing: content-box;
     width: 100%;
    background-color: #fff;
    margin: 0;
    padding: 0px 20px;
-   gap: 15px;}
+   gap: 20px;}
+
+#Activites_Marseille h2 
+{
+    margin: 0px;
+    width: inherit;
+}
 
 .organisation
 {
@@ -811,18 +836,19 @@ aside
     gap: 0;
 }
 .element1 img, .element2 img
-{   width: 98%;
+{   width: 100%;
     height: 115px;
-    border-radius: 20px 20px 0px 0px;
-    margin: 3px;
+    border-radius: 10px 10px 0px 0px;
 }
 .element1, .element2
-{   width: 98%;
-    margin-bottom: 15px;
-    border-radius: 20px;}
+{   width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    }
 
 .element1 h3, .element2 h3
-{   margin-left: 5px;}
+{   margin-left: 5px;
+    text-align: left ;}
 /********Footer*****/
 footer
 {
