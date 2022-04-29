@@ -107,7 +107,7 @@ header nav a:hover
     color: #0065FC;
     border-bottom: none;
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    padding: 30px 50px;
 }
 /********************** Section Recherche  */
 #sectionrecherche
@@ -138,7 +138,7 @@ header nav a:hover
     display: flex;
     z-index: auto;
     position: relative;
-    max-width: 500px;
+    max-width: 400px;
     border: 1px solid #F2F2F2;
     color: black;
     border-radius: 15px 15px 15px 15px;
@@ -160,7 +160,7 @@ header nav a:hover
     border: 0;
     background: #fff;
     color: black;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Ralewaybold', Arial, Helvetica, sans-serif;
   }
 /*pour noir s'affiche dans Chrome et Firefox*/
 
@@ -322,11 +322,13 @@ article, aside
     }
 
 
-.afficher
+.afficher a
 {
     font-family: 'RalewayLight', Arial, Helvetica, sans-serif;
     color: black;
     padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 /********** aside section1 */
 aside 
@@ -564,16 +566,16 @@ body
 }
 
 /**** Tablette ****/
-@media all and  (min-width: 768px) and (max-width: 992px) 
+@media all and  (min-width: 769px) and (max-width: 992px) 
 
 {
 body {
     max-width: 992px;
     min-width: 768px;
 }
-h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p, .checboxfilter, .flex-form, footer nav
+h1, h2, h3, p, .fa-solid, header, .afficher, .lignefilter p,.filter a,  .checboxfilter, .flex-form, footer nav
 {
-        font-size: 70%;
+        font-size: 80%;
 }
 #section1
 {
