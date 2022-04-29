@@ -7,6 +7,12 @@
         font-weight: normal;
         font-style: normal;
 }
+{
+    font-family: 'Ralewaybold' ;
+    src:  url('Font/Raleway/Raleway-Bold.ttf') format('truetype' );
+        font-weight: normal;
+        font-style: normal;
+}
 
 
 /******************************** Elements principaux de la page ************/
@@ -23,26 +29,28 @@ header, main
 {
     margin: 20px 40px 20px 40px;
 }
-h1 ,  h2, h3
+h1 ,  h2, h3, .filter a 
 {
-    font-family :  'Raleway' , Arial , Helvetica , sans-serif;
+    font-family :  'Ralewaybold' , Arial , Helvetica , sans-serif;
 }
 
 H1 
 {
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 h2
 {
     font-size: 18px;
+    font-weight: bold;
 }
 h3
 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 p
@@ -114,7 +122,7 @@ header nav a:hover
 }
 
 
-.fa-location-dot
+#from span
  {
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -122,6 +130,7 @@ header nav a:hover
     padding: 20px 20px;
     cursor: pointer;
     border-radius: 15px 0px 0px 15px;
+    margin: 0;
   }
 
 .flex-form 
@@ -153,7 +162,13 @@ header nav a:hover
     color: black;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
-  
+/*pour noir s'affiche dans Chrome et Firefox*/
+
+::-webkit-input-placeholder {  color:#000000; opacity: 1; }
+::-moz-placeholder {  color:#000000; opacity: 1;}
+input:-moz-placeholder {  color:#000000; opacity: 1;} 
+
+
   #RechercheVille
   {
     flex-basis: 450px;
@@ -191,7 +206,7 @@ header nav a:hover
 }
 
 .filter a {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Ralewaybold', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color:#000000; 
@@ -301,7 +316,7 @@ article, aside
     {
     display: flex;
     flex-flow: column nowrap;
-    height: 80px;
+    height: 100%;
     margin-left: 10px;
     justify-content: space-between;
     }
@@ -375,19 +390,26 @@ aside
    
 }
 
-.etoile
+.fa-solid
 {
     color: #0065FC;
     font-size: 12px;
     margin-bottom: 5px;
     margin-top: 3px;
-
+}
+.fa-regular
+{
+    color: grey; 
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
 
 .textcartes
 {
     display: flex;
     flex-flow: column nowrap;
+    text-align: left;
 }
 
 .populaire img
